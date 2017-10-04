@@ -12,9 +12,9 @@ public class TestInterfaceImpl implements TestInterface {
 
   @Override
   @PermissionAllowed(Resources.ALLOW_CSP_REST)
-  public Response cspSingleInitSignature(Long certificateId,
-    String fileHashType,
-    String fileHash) {
+  public Response getResponse(Long data,
+    String data1,
+    String data2) {
 
     String[] datas = getBasicAuthenticatedUserNameAndPassword();
     String username = datas[0];

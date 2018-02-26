@@ -14,7 +14,7 @@ public interface TestInterface {
     @ApiResponse(code = 200, message = "OK"),
     @ApiResponse(code = 403, message = "Insufficient rights"),
     @ApiResponse(code = 400, message = "Invalid syntax") })
-  public Response cspSingleInitSignature(
+  public Response cspSingleInit(
     @ApiParam(value = "data", required = true) @QueryParam("data") Long data,
     @ApiParam(value = "data1", required = true) @QueryParam("data1") String data1,
     @ApiParam(value = "data2", required = true) @QueryParam("data2") String data2);

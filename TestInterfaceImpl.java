@@ -12,7 +12,7 @@ public class TestInterfaceImpl implements TestInterface {
 
   @Override
   @PermissionAllowed(Resources.ALLOW_CSP_REST)
-  public Response getResponse(Long data,
+  public Response cspSingleInit(Long data,
     String data1,
     String data2) {
 
